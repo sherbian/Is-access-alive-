@@ -1,0 +1,9 @@
+CREATE TABLE `Person` (
+`id` AUTOINCREMENT,
+`tn` LONG NOT NULL,
+`FIO` MEMO,
+`dr` DATE NOT NULL,
+    CONSTRAINT PK_Person UNIQUE (tn), PRIMARY KEY(tn)
+)
+
+
