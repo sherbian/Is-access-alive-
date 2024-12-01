@@ -1,0 +1,9 @@
+CREATE TABLE `PIN` (
+`id` AUTOINCREMENT,
+`tn` LONG NOT NULL,
+`ln` VARCHAR,
+`startDate` DATETIME,
+`endDate` DATETIME,
+    CONSTRAINT PK_PIN PRIMARY KEY(id),
+    FOREIGN KEY(tn) REFERENCES Person(tn)
+);
